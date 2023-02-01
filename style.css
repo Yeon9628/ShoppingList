@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+ul {
+  padding: 0;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+body {
+  text-align: center;
+  background-color: #ced3df;
+}
+
+.list {
+  width: 400px;
+  margin: auto;
+  border-radius: 20px;
+  background-color: #ebebee;
+  -webkit-box-shadow: 10px 10px 5px 3px rgba(143,143,143,1);
+  -moz-box-shadow: 10px 10px 5px 3px rgba(143,143,143,1);
+  box-shadow: 10px 10px 5px 3px rgba(143,143,143,1);
+}
+
+.herader {
+  height: 48px;
+  padding: 8px;
+  font-size: 24px;
+  color: rgb(91,90,84);
+  border-radius: 20px 20px 0 0;
+  background: rgb(245,245,242);
+  background: linear-gradient(160deg, rgba(245,245,242,1) 39%, rgba(247,245,200,1) 100%);
+}
+
+.items {
+  height: 500px;
+  overflow-y: auto; /* 지정한 높이를 넘으면 스크롤 생성 */
+}
+
+.item {
+  display: flex;
+  margin: 5px 15px;
+  padding: 8px 18px;
+  border-radius: 10px;
+  background-color: #f1f0f7;
+  justify-content: space-between;
+}
+
+.item__name {
+  justify-content:left;
+}
+
+.item__delete {
+  font-size: 16px;
+  transition: all 300ms ease-in;
+}
+
+.item__delete:hover {
+  color: red;
+  transform: scale(1.1);
+}
+
+.footer {
+  background: rgb(245,245,242);
+  background: linear-gradient(160deg, rgba(245,245,242,1) 39%, rgba(247,245,200,1) 100%);
+  border-radius: 0 0 20px 20px;
+}
+
+.footer__input {
+  width: 100%;
+  height: 32px;
+  border: none;
+  outline: none;
+  padding: 0 16px;
+  font-size: 16px;
+}
+
+.footer__button {
+  width: 48px;
+  height: 48px;
+  margin: 3px;
+  color: black;
+  font-size: 28px;
+  border-radius: 50px;
+  background-color: white;
+  transition: transform 300ms ease-in;
+}
+
+.footer__button:hover {
+  transform: scale(1.1);
+}
